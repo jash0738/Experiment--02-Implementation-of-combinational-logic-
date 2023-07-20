@@ -22,8 +22,35 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## Program:
 /*
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+module combinationalcircuit(f1,a,b,c,d);
+
+input a,b,c,d;
+
+output f1;
+
+wire abar,bbar,cbar,dbar,x1,x2,x3,x4,x5;
+
+assign abar=~a;
+
+assign bbar=~b;
+
+assign cbar=~c;
+
+assign dbar=~d;
+
+assign x1=abar&bbar&cbar&dbar;
+
+assign x2=a&cbar&dbar;
+
+assign x3=bbar&c&dbar;
+
+assign x4=abar&b&c&d;
+
+assign x5=b&cbar&d;
+
+assign f1=x1|x2|x3|x4|x5;
+
+endmodule 
 */
 ## TIMING DIAGRAM
 ![image](https://github.com/jash0738/Experiment--02-Implementation-of-combinational-logic-/assets/139841600/89f57763-fa02-4b92-90fe-0f4dfe17fbbb)
