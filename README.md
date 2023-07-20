@@ -81,4 +81,4 @@ endmodule
 ## RTL realization
 ![image](https://github.com/jash0738/Experiment--02-Implementation-of-combinational-logic-/assets/139841600/5f51d0ea-03fd-43cc-b971-dfeaa0dd6b32)
 ## Result:
-Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
+Thus the given logic function is implemented using and or and not gate and their operations are verified using Verilog programming.
